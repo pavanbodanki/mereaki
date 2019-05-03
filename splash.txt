@@ -1,0 +1,9 @@
+app.get('/signon', function (req, res) {
+
+     // extract parameters (queries) from URL
+     req.session.client_ip = req.query.client_ip;
+
+     // render login page using handlebars template and send in session data
+     res.render('sign-on', req.session);
+
+    });

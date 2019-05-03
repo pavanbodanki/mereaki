@@ -1,0 +1,137 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{
+
+background-image:url(trains.jpg);
+background-size:cover;
+}
+
+.moon{
+width:500px;
+height:200px;
+background-color:rgba(0,0,0,0.4);
+margin:0 auto;
+margin-top:40px;
+padding-top:20px;
+padding-left:50px;
+padding-bottom:100px;
+border-radius:15px;
+-webkit-border-radius:15px;
+-o-border-radius:15px;
+-moz-border-radius:15px;
+color:white;
+font-weight:bolder;
+box-shadow:inset -4px -4px rgba(0,0,0,0.5)
+font-size:18px;
+}
+.moon input[type="text"]{
+
+width:200px;
+height:35px;
+border:0;
+border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+-moz-border-radius:5px;
+padding-left:10px
+
+}
+.moon input[type="button"]{
+
+width:100px;
+height:35px;
+border:10;
+border-color:darkgreen;
+border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+-moz-border-radius:5px;
+background-color:green;
+font-weight:bolder;
+padding left:50px;
+align:centre
+}/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.fixedbutton {
+   position: fixed;
+   bottom: 560px;
+   right: 1000px;
+}
+</style>
+</head>
+<body>
+<center>
+<div class="moon">
+<h2>WELCOME TO INDIAN RAILWAYS</h2><br><br><br>
+<form>
+<label for="mobno"><b>Mobile number</b></label>
+<input type="text" placeholder="phone number" autofocus><br><br>
+<input type="button" value="login"><br><br><br>
+ <iframe <div class="popup" onclick="myFunction()">>Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div></iframe> 
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<a href="#head"><img src="upbutton.png" id="fixedbutton"></a>
+</center>
+</form>
+</div>
+</body>
